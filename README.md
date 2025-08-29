@@ -19,7 +19,7 @@ This tool allows you to connect to any TCP server and interact with it in a bidi
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/telnet-go.git
+git clone https://github.com/aliskhannn/telnet-go.git
 cd telnet-go
 
 # Build the binary
