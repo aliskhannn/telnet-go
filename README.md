@@ -13,6 +13,17 @@ This tool allows you to connect to any TCP server and interact with it in a bidi
 - Print server responses to stdout.
 - Exit when the user presses `Ctrl+D` (EOF).
 
+## Project Structure
+
+```
+telnet-go/
+├── cmd/telnet/        # Main entry point
+├── internal/config/   # Configuration (timeout, defaults)
+├── internal/flags/    # CLI flags parsing
+├── internal/client/   # Telnet client logic
+├── Makefile           # Build, lint, clean commands
+```
+
 ---
 
 ## Installation
@@ -45,8 +56,8 @@ Example session:
 Connected to tcpbin.com:4242
 hello
 hello
-pint 324
-pint 324
+ping 324
+ping 324
 
 Connection closed
 ```
@@ -83,14 +94,3 @@ make clean
 ```
 
 ---
-
-## Project Structure
-
-```
-telnet-go/
-├── cmd/telnet/        # Main entry point
-├── internal/config/   # Configuration (timeout, defaults)
-├── internal/flags/    # CLI flags parsing
-├── internal/client/   # Telnet client logic
-├── Makefile           # Build, lint, clean commands
-```
