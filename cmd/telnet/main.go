@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
+	"os"
+
 	"github.com/aliskhannn/telnet-go/internal/client"
 	"github.com/aliskhannn/telnet-go/internal/config"
 	"github.com/aliskhannn/telnet-go/internal/flags"
 	"github.com/spf13/pflag"
-	"os"
 )
 
 func main() {
